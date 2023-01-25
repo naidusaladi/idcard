@@ -38,11 +38,9 @@ def BarcodeReader(image):
 				
 def main():
     img=st.camera_input("image")
-
-    im1=Image.open(img)
-
- 
-    BarcodeReader(im1)
-    
+    if img:
+        im1=Image.open(img)
+        BarcodeReader(im1)
+   
 if __name__=='__main__':
     main()
