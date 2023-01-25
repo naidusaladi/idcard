@@ -41,11 +41,8 @@ def main():
 
     im1=Image.open(img)
 
-    im1=im1.save("C:\\Users\\DELL\\Desktop\\streamlit\\naidu2.jpg")
-    st.image(img)
-
-    send="C:\\Users\\DELL\\Desktop\\streamlit\\idcard.jpg"
-    BarcodeReader(send)
+ 
+    BarcodeReader(im1)
     
 if __name__=='__main__':
     main()
